@@ -54,7 +54,7 @@
 </form>
 <div>
 <h9>Video 1</h9>
-<select name="video1" onchange=max(1) id="video1" title="">
+<select name="video1" id="video1" title="">
     <option label="Inactive" value="Inactive">Inactive</option>
     <option label="In Progress" value="In_Progress">In Progress</option>
     <option label="Future_Project" value="Future_Project">Future_Project</option>
@@ -64,17 +64,17 @@
 </div>
 <div>
 <label class="v1-label">Start time</label>
-<input autocomplete="off" type="text" id="v1_start" value="09/20/2014 06:15 pm" >
+<input autocomplete="off" type="text" id="v1_start" onchange="dateVal(1, 1);" value="09/20/2014 06:15 pm" >
 </div>
 <div>
 <label class="v1-label">End time</label>
 
-<input autocomplete="off" type="text" id="v1_end" value="09/20/2014 06:15 pm" >
+<input autocomplete="off" type="text" id="v1_end" onchange="dateVal(1, 2);" value="09/20/2014 06:15 pm" >
 </div>
 <br>
 <div>
 <h9>Video 2</h9>
-<select name="video2" onchange=max(2) id="video2" title="">
+<select name="video2" id="video2" title="">
     <option label="Inactive" value="Inactive">Inactive</option>
     <option label="In Progress" value="In_Progress">In Progress</option>
     <option label="Future_Project" value="Future_Project">Future_Project</option>
@@ -84,11 +84,11 @@
 </div>
 <div>
 <label>Start time</label>
-<input autocomplete="off" type="text" id="v2_start" value="09/20/2014 06:15 pm">
+<input autocomplete="off" type="text" id="v2_start" onchange="dateVal(2, 1);" value="09/20/2014 06:15 pm">
 </div>
 <div>
 <label>End time</label>
-<input autocomplete="off" type="text" id="v2_end" value="09/20/2014 06:15 pm">
+<input autocomplete="off" type="text" id="v2_end" onchange="dateVal(2, 2);" value="09/20/2014 06:15 pm">
 </div>
 <br>
 <div>
@@ -102,14 +102,14 @@
 </select>
 <div>
 <label>Start time</label>
-<input autocomplete="off" type="text" id="v3_start" value="09/20/2014 06:15 pm" >
+<input autocomplete="off" type="text" id="v3_start" onchange="dateVal(3, 1);" value="09/20/2014 06:15 pm" >
 </div>
 <div>
 <label>End time</label>
-<input autocomplete="off" type="text" id="v3_end" value="09/20/2014 06:15 pm" >
+<input autocomplete="off" type="text" id="v3_end" onchange="dateVal(3, 2);" value="09/20/2014 06:15 pm" >
 </div>
 <script>
-var date1 = $('#v1_start').val();
+/* var date1 = $('#v1_start').val();
 var date2 = $('#v1_end').val();
 var dateObject1 = new Date(date1);
 var dateObject2 = new Date(date2);
@@ -136,7 +136,7 @@ $("#video1").on("change", function () {
 	//alert('change');
   //});
 
- function max (e) {
+ function dateVal (e, f) {
 
     var com = e;
     if (e === 1){
@@ -166,6 +166,6 @@ $("#status2").on("change", function () {
     }
 })
 
-
+ */
 </script>
 @endsection

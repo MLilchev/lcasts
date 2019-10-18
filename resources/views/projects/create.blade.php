@@ -54,7 +54,7 @@
 </form>
 <div>
 <h9>Video 1</h9>
-<select name="video1" id="video1" title="">
+<select name="video1" id="video1" title="" onchange="hideDateElement1();">
     <option label="Inactive" value="Inactive">Inactive</option>
     <option label="In Progress" value="In_Progress">In Progress</option>
     <option label="Future_Project" value="Future_Project">Future_Project</option>
@@ -74,7 +74,7 @@
 <br>
 <div>
 <h9>Video 2</h9>
-<select name="video2" id="video2" title="">
+<select name="video2" id="video2" title="" onchange="hideDateElement2();">
     <option label="Inactive" value="Inactive">Inactive</option>
     <option label="In Progress" value="In_Progress">In Progress</option>
     <option label="Future_Project" value="Future_Project">Future_Project</option>
@@ -93,7 +93,7 @@
 <br>
 <div>
 <h9>Video 3</h9>
-<select name="video3" id="video3" title="">
+<select name="video3" id="video3" title="" onchange="hideDateElement3();">
     <option label="Inactive" value="Inactive">Inactive</option>
     <option label="In Progress" value="In_Progress">In Progress</option>
     <option label="Future_Project" value="Future_Project">Future_Project</option>

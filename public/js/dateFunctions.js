@@ -57,3 +57,117 @@ function dateVal (e, f) {
     checkDateClash(date5, date6 , date2);
 }
 
+var saved_value1;
+var saved_value2;
+var saved_value3;
+var saved_value4;
+var saved_value5;
+var saved_value6;
+
+function hideDateElement1 () {
+
+	var dropdown;
+	var date1;
+	var date2;
+
+
+    var dropdown = "#video1";
+    var date1 = '#v1_start';
+    var date2 = '#v1_end';
+
+
+	//saved_value1 = $(date1).val();
+	//saved_value2 = $(date2).val();
+	//alert(dropdown);
+	if ($(dropdown).val() != "Inactive") {
+		if ($(date1).val()!='00 January 0000, 00:00') {
+			saved_value1 = $(date1).val();
+		}
+
+		if ($(date2).val()!='00 January 0000, 00:00') {
+			saved_value2 = $(date2).val();
+		}
+	}
+	
+	if ($(dropdown).val() == "Inactive") {
+        saved_value1 = $(date1).val();
+        saved_value2 = $(date2).val();
+		$(date1).val('00 January 0000, 00:00').prop('disabled', true).prop('hidden', true);
+		$(date2).val('00 January 0000, 00:00').prop('disabled', true).prop('hidden', true);
+	} else { 
+		$(date1).val(saved_value1).prop('disabled', false).prop('hidden', false); 
+		$(date2).val(saved_value2).prop('disabled', false).prop('hidden', false);
+	}
+}
+
+function hideDateElement2 () {
+    
+	var dropdown;
+	var date1;
+	var date2;
+
+
+    var dropdown = "#video2";
+    var date1 = '#v2_start';
+    var date2 = '#v2_end';
+
+
+	//saved_value1 = $(date1).val();
+	//saved_value2 = $(date2).val();
+	//alert(dropdown);
+	if ($(dropdown).val() != "Inactive") {
+		if ($(date1).val()!='00 January 0000, 00:00') {
+			saved_value3 = $(date1).val();
+		}
+
+		if ($(date2).val()!='00 January 0000, 00:00') {
+			saved_value4 = $(date2).val();
+		}
+	}
+	
+	if ($(dropdown).val() == "Inactive") {
+        saved_value3 = $(date1).val();
+        saved_value4 = $(date2).val();
+		$(date1).val('00 January 0000, 00:00').prop('disabled', true).prop('hidden', true);
+		$(date2).val('00 January 0000, 00:00').prop('disabled', true).prop('hidden', true);
+	} else { 
+		$(date1).val(saved_value3).prop('disabled', false).prop('hidden', false); 
+		$(date2).val(saved_value4).prop('disabled', false).prop('hidden', false);
+	}
+}
+
+function hideDateElement3 () {
+    
+	var dropdown;
+	var date1;
+	var date2;
+
+
+    var dropdown = "#video3";
+    var date1 = '#v3_start';
+    var date2 = '#v3_end';
+
+
+	//saved_value1 = $(date1).val();
+	//saved_value2 = $(date2).val();
+	//alert(dropdown);
+	if ($(dropdown).val() != "Inactive") {
+		if ($(date1).val()!='00 January 0000, 00:00') {
+			saved_value5 = $(date1).val();
+		}
+
+		if ($(date2).val()!='00 January 0000, 00:00') {
+			saved_value6 = $(date2).val();
+		}
+	}
+	
+	if ($(dropdown).val() == "Inactive") {
+        saved_value5 = $(date1).val();
+        saved_value6 = $(date2).val();
+		$(date1).val('00 January 0000, 00:00').prop('disabled', true).prop('hidden', true);
+		$(date2).val('00 January 0000, 00:00').prop('disabled', true).prop('hidden', true);
+	} else { 
+		$(date1).val(saved_value5).prop('disabled', false).prop('hidden', false); 
+		$(date2).val(saved_value6).prop('disabled', false).prop('hidden', false);
+	}
+}
